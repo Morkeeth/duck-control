@@ -1,5 +1,13 @@
 # Duck Control
 
+**A readable Kaggle notebook that runs the Tufa Labs Duck harness for ARC-AGI-3, so you can follow what the pipeline does before you run it.**
+
+- Problem: the original harness notebook is harder to follow; this version keeps the same Kaggle inputs and steps in readable form.
+- For: anyone entering the ARC-AGI-3 Kaggle competition who wants to run or study the Duck harness.
+- What it does: prepares the Kaggle runtime, loads the attached Tufa Labs source bundle and model assets, runs the solver and writes `submission.parquet`. The solver lives in the attached dataset, not here, and this version has not reproduced the original's reported score.
+- Try it: `kaggle kernels push -p .` after accepting the competition rules (see "Run it on Kaggle" below). Published October 2026.
+
+
 A readable Kaggle notebook for running the Tufa Labs Duck harness in ARC-AGI-3. The notebook prepares the Kaggle runtime, loads the attached Tufa Labs source bundle and model assets, runs the solver, and writes `submission.parquet` plus diagnostics to `/kaggle/working`.
 
 The solver itself is not implemented in this repository. It comes from the attached `jeroencottaar/taaf-kaggle-source-share` dataset. This repository preserves the public notebook code and the Kaggle metadata needed to attach its declared inputs.
