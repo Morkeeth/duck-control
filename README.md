@@ -1,5 +1,22 @@
 # Duck Control
 
+## TLDR
+
+A readable Kaggle notebook for running the Tufa Labs Duck harness in ARC KAGGLE.<br>
+For entrants who want to inspect runtime setup, declared datasets and solver outputs.<br>
+The solver comes from attached source data; this repository does not independently establish its reported score.
+
+## The problem and approach
+
+- Problem: the original harness notebook is harder to follow; this version keeps the same Kaggle inputs and steps in readable form.
+- What it does: prepares the Kaggle runtime, loads the attached Tufa Labs source bundle and model assets, runs the solver and writes `submission.parquet`. The solver lives in the attached dataset, not here, and this version has not reproduced the original's reported score.
+
+## Review and pick up the work
+
+[Agent guide](AGENTS.md)
+
+Start with the linked source, setup and evidence. Recorded demos and sample data keep their original scope; use the repository instructions for a fresh run.
+
 A readable Kaggle notebook for running the Tufa Labs Duck harness in ARC-AGI-3. The notebook prepares the Kaggle runtime, loads the attached Tufa Labs source bundle and model assets, runs the solver, and writes `submission.parquet` plus diagnostics to `/kaggle/working`.
 
 The solver itself is not implemented in this repository. It comes from the attached `jeroencottaar/taaf-kaggle-source-share` dataset. This repository preserves the public notebook code and the Kaggle metadata needed to attach its declared inputs.
@@ -32,3 +49,7 @@ That 1.21 figure is a result attributed to the linked original notebook. It is n
 - `kernel-metadata.json`: Kaggle runtime, competition, and dataset configuration.
 
 The downloaded Kaggle snapshot contains no saved cell outputs, credentials, local home paths, wallet data, or personal email addresses.
+
+## License and data boundaries
+
+This checkout has no root license file establishing general reuse rights. Data, provider responses, media, fonts and other third-party assets may have separate terms. Repository access alone does not grant rights to those materials. 
